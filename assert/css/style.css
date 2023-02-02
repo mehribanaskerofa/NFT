@@ -32,6 +32,11 @@ html, body{
     border-radius: 5px;
 
 }
+.mark{
+    font-size: 12px;
+    line-height: 14px;
+    color: #5A5A5A;
+}
 
 header{
     display: flex;
@@ -109,7 +114,9 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
 }
-
+.header-text p{
+    max-width: 550px;
+}
 header .header-container .header-content{
     
     flex: 1;
@@ -124,13 +131,14 @@ header .header-container .header-content{
 header .header-content h1{
     font-size: 50px;
     line-height: 60px;
+    max-width: 600px;
 }
 header .header-content p{
     font-size: 16px;
     line-height: 26px;
 }
 .liner{
-    width: 100%;
+    max-width: 100%;
     border: 1px solid #D2D2D2;
     margin-bottom: 40px;
 }
@@ -159,12 +167,12 @@ header .header-container .header-img-container{
 .header-container .header-img-container .user-box{
     display: flex;
     justify-content: space-between;
-    width: 450px;
+    max-width: 450px;
     align-items: center;
     margin-top: 30px;
 }
 header .header-container .header-img-container .header-img img{
-    width: 450px;
+    max-width: 450px;
     height: 550px;
 }
 .header-img-container .user-box .user-title{
@@ -263,17 +271,16 @@ header .header-container .header-img-container .header-img img{
 .auction{
     max-width: 100%;
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     /* align-items: center; */
     justify-content: space-between;
 }
 .auctions .auction .auction-head{
-    /* width: 100%; */
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 15px 0;
-
 }
 .auctions .auction .auction-head h2{
     font-size: 40px;
@@ -320,6 +327,7 @@ header .header-container .header-img-container .header-img img{
     right: 0;
     padding: 7px;
     border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 .auctions  .auction-content .auction-action i:hover{
     color: red;
@@ -349,4 +357,265 @@ header .header-container .header-img-container .header-img img{
 .auctions  .auction-content .auction-condition span{
     font-size: 12px;
 }
+/* -------------------product */
+.products{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.products .product-head{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+.products .product-head h2{
+    font-size: 40px;
+    line-height: 47px;
+}
+.products .product-container{
+    max-width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.products .product-content{
+    width: 370px;
+    height: 370px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    margin: 10px;
+    /* padding: 10px; */
+
+}
+.products .product-content .product-img {
+    width: 100%;
+}
+
+.products .product-content .product-img img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;  
+}
+.products .product-case{
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.products .product-content .product-title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.products .product-content .product-title h2{
+    font-size: 18px;
+    line-height: 21px;
+}
+.products .product-content .product-title i{
+    position: absolute;
+    right: 0;
+    padding: 9px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.products .product-content .product-title i:hover{
+    color: red;
+}
+.products .product-content .product-person{
+    width: 100%;
+    /* flex: 1; */
+    display: flex;
+    align-items: center;
+}
+.products .product-content .product-person span{
+    padding-right: 5px;
+}
+.products .product-content .product-person p{
+    font-size: 12px;
+    line-height: 14px;
+}
+.products .product-content .product-text{
+    width: 100%;
+    height: 40px;
+    /* flex: 1; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.products .product-content .product-text span{
+    font-size: 12px;
+    line-height: 14px;
+}
+.products .product-content .product-price{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.products .product-content .product-bid{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* -------------- */
+.creators{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.creator{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.creators .creator-head{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+.creators .creator-head h2{
+    font-size: 40px;
+    line-height: 47px;
+}
+.creators .creator-container{
+    max-width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.creator .creator-content{
+    width: 170px;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    padding: 20px;
+    background-color: white;
+}
+.creator .creator-content .creator-img{
+    width: 100%;
+}
+.creator .creator-content .creator-img img{
+    width: 100%;
+    height: 70px;
+    object-fit: cover;
+}
+.creator .creator-content .creator-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.creator .creator-content .creator-text .creator-name{
+    font-size: 20px;
+    line-height: 24px;
+}
+.creator .creator-content .creator-text .creator-bid{
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    padding: 3px 0;
+}
+.creator .creator-content  .creator-button{
+    width: 100px;
+    height: 40px;
+    background: #F3C1FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.creator .creator-content  .creator-button a{  
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: capitalize;
+    color: #5A5A5A;
+    text-align: center;
+}
+
+/* ----------------- */
+
+.assets{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.asset{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.asset .asset-case{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.asset .asset-case .asset-name{
+    flex: 1;
+}
+.asset .asset-case .asset-name h3{
+    font-size: 40px;
+    line-height: 47px;
+}
+.asset .asset-case .asset-list{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.asset .asset-case .asset-list .asset-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.asset .asset-case .asset-list .asset-bar li{
+    font-size: 16px;
+    line-height: 19px;
+    padding: 5px 8px;
+    margin: 5px;
+    background-color: white;
+}
+
+.asset .asset-texts{
+    width: 100%;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.asset .asset-text{
+    width: 50%;
+}
