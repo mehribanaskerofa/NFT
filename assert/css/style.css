@@ -377,6 +377,7 @@ header .header-container .header-img-container .header-img img{
     align-items: center;
     justify-content: space-between;
     margin: 15px 0;
+    margin-top: 50px;
 }
 .products .product-head h2{
     font-size: 40px;
@@ -401,6 +402,9 @@ header .header-container .header-img-container .header-img img{
 
 }
 .products .product-content .product-img {
+    display: flex;
+    align-items:center ;
+    justify-content: center;
     width: 100%;
 }
 
@@ -422,13 +426,17 @@ header .header-container .header-img-container .header-img img{
 .products .product-content .product-title{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     position: relative;
 }
 .products .product-content .product-title h2{
     font-size: 18px;
     line-height: 21px;
+}
+.product-title img{
+    border-radius: 50%;
+    margin-right: 10px;
 }
 .products .product-content .product-title i{
     position: absolute;
@@ -475,9 +483,12 @@ header .header-container .header-img-container .header-img img{
 .products .product-content .product-bid{
     height: 100%;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: flex-start;
     justify-content: space-between;
+}
+.products .product-content .product-bid i:hover{
+    color: #CC00FF;
 }
 
 /* -------------- */
@@ -500,6 +511,8 @@ header .header-container .header-img-container .header-img img{
     align-items: center;
     justify-content: space-between;
     margin: 15px 0;
+    margin-top: 50px;
+
 }
 .creators .creator-head h2{
     font-size: 40px;
@@ -575,6 +588,8 @@ header .header-container .header-img-container .header-img img{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 50px;
+
 }
 .asset .asset-case{
     width: 100%;
@@ -582,16 +597,19 @@ header .header-container .header-img-container .header-img img{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
+        margin-top: 50px;
+
 }
 .asset .asset-case .asset-name{
-    flex: 1;
+    width: 466px;
 }
 .asset .asset-case .asset-name h3{
     font-size: 40px;
     line-height: 47px;
+    margin-bottom: 20px;
 }
 .asset .asset-case .asset-list{
-    flex: 1;
+    /* flex: 1; */
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -618,4 +636,211 @@ header .header-container .header-img-container .header-img img{
 }
 .asset .asset-text{
     width: 50%;
+}
+.product-title img{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.product-txt{
+    font-size: 18px;
+    line-height: 21px;
+    margin: 2px 0;
+}
+.products .product-content .product-imgs img{
+    margin-top: 10px;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;  
+
+}
+/* -------- */
+.collects{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.collect{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+    margin-top: 50px;
+
+}
+.collect .collect-text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+
+}
+.collect .collect-text h2{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 50px;
+}
+
+.collect-img img{
+    width: 551px;
+    height: 498px;
+    opacity: 0.78;
+    /* background: linear-gradient(89.76deg, rgba(255, 255, 255, 0.2) -1.07%, rgba(204, 0, 255, 0.094) 102.3%); */
+}
+.button-width{
+    width: 20%;
+}
+.product-title h4{
+    font-size: 20px;
+    line-height: 30px;
+}
+.product-txts p{
+    font-size: 12px;
+    line-height: 22px;
+}
+.blogs{
+    width: 390px;
+    height: 360px !important;
+    
+}
+.flex-row{
+    /* display: flex !important; */
+    flex-direction: row !important;
+    padding: 0 !important;
+    padding: 0 10px !important;
+
+}
+.product-text{
+    padding-top: 7px ;
+
+}
+.products .product-content .product-bid i{
+    padding: 0 3px;
+}
+/* seller---------------- */
+.sellers{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seller{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sellers .seller-head{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.sellers .seller-head h2{
+    font-size: 40px;
+    line-height: 47px;
+}
+.sellers .seller-container{
+    max-width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.sellers .seller-content{
+    width: 370px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5%;
+
+}
+.seller-case{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+.seller-title{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.seller-button a{
+    background-color: white;
+    border: black 1px solid;
+}
+.seller-button a:hover{
+    background-color: var(--primary);
+    color: white;
+}
+/* footer */
+.footer-main-item{
+    width: 310px;
+}
+
+
+.footer-main-item p{
+    margin: 20px 0;
+}
+
+
+
+.main-item-socials i{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-item{
+    width: 160px;
+}
+
+.footer-item ul li{
+    margin: 10px 0;
+}
+
+.footer{
+    margin-top: 150px;
+}
+
+.main-item-socials :hover{
+    color: blueviolet;
+    transform: scale(110%);
+
+}
+.fa-behance{
+    color: blue;
+}
+.fa-viacoin{
+    color: #CC00FF;
+}
+.fa-vk{
+    color: green;
+}
+.fa-pinterest-p{
+    color: red;
 }

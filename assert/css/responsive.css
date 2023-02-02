@@ -17,8 +17,32 @@
 .header-container{
 flex-direction: column !important;  
 }
+.asset .asset-case .asset-list {
+  display: block;
+}
+.asset .asset-case .asset-name{
+  display: block !important;
 }
 
+.asset{
+  flex-direction: column;
+}
+}
+
+@media (max-width:940px) {
+  .asset-case{
+    justify-content: center !important;
+    text-align: center ;
+    align-items: center ;
+    margin: 0 auto ;
+    margin-bottom: 30px;
+
+  }
+
+  .asset-list{
+    margin-top: 30px;
+  }
+}
 
 
 @media (max-width:1020px) {
